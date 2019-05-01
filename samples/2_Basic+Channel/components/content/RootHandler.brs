@@ -26,6 +26,14 @@ sub GetContent()
                             Categories: arrayItem["genres"][0]
                             title : arrayItem.title
                         })
+                        itemNode.addFields({
+                            handlerConfigRAF: {
+                                name: "HandlerRAF"
+                                fields: {
+                                    contentId: "ID"
+                                }
+                            }
+                        })                        
                         if item = "movies"
                             ' Add 4k option
                             'Never do like this, it' s better to check if all fields exist in json, but in sample we can skip this step
