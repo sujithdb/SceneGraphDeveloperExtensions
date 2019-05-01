@@ -521,7 +521,7 @@ sub ExtractRafConfig()
     topControl = m.top.control
     if (currentItem.handlerConfigRAF <> invalid and currentItem.handlerConfigRAF.name <> "") then
         m.rafHandlerConfig = currentItem.handlerConfigRAF
-        currentItem.handlerConfigRAF = invalid
+        ' currentItem.handlerConfigRAF = invalid
     else if (m.top.content.handlerConfigRAF <> invalid and m.top.content.handlerConfigRAF.name <> "") then
         m.rafHandlerConfig = m.top.content.handlerConfigRAF
     else if (m.top.handlerConfigRAF <> invalid and m.top.handlerConfigRAF.name <> "") then
